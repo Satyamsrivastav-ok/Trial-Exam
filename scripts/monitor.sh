@@ -19,6 +19,5 @@ echo "Open Ports:"
 ss -tuln
 
 echo ""
-echo "Internet Connectivity:"
-ping -c 2 google.com
-
+echo "Internet Connectivity Check:"
+curl -I https://google.com
