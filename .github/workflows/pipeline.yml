@@ -1,0 +1,23 @@
+name: DevOps Trial Pipeline
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Show Files
+        run: ls
+
+      - name: Run Monitoring Script
+        run: bash scripts/monitor.sh
+
+      - name: Run Application
+        run: bash app.sh
