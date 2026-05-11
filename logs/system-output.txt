@@ -1,0 +1,52 @@
+===== SYSTEM MONITORING =====
+
+CPU Load:
+top - 19:34:58 up 4 min,  1 user,  load average: 0.04, 0.15, 0.08
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            7815         578        6518           3         872        7236
+Swap:           2048           0        2048
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         476G  163G  314G  35% /usr/lib/wsl/drivers
+/dev/sdd       1007G  4.1G  952G   1% /
+none            3.9G   80K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  2.7M  3.9G   1% /init
+none            3.9G  896K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\             476G  163G  314G  35% /mnt/c
+snapfuse         67M   67M     0 100% /snap/core24/1499
+snapfuse         67M   67M     0 100% /snap/core24/1587
+snapfuse        152M  152M     0 100% /snap/docker/3377
+snapfuse        149M  149M     0 100% /snap/docker/3505
+snapfuse         49M   49M     0 100% /snap/snapd/26382
+snapfuse         50M   50M     0 100% /snap/snapd/26865
+tmpfs           782M   20K  782M   1% /run/user/0
+
+Open Ports:
+Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:PortProcess
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*          
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*          
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*          
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*          
+udp   UNCONN 0      0               [::1]:323          [::]:*          
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*          
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*          
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*          
+
+Internet Connectivity:
+PING google.com (172.217.26.14) 56(84) bytes of data.
+64 bytes from nrt20s02-in-f14.1e100.net (172.217.26.14): icmp_seq=1 ttl=115 time=8.40 ms
+64 bytes from nrt20s02-in-f14.1e100.net (172.217.26.14): icmp_seq=2 ttl=115 time=11.2 ms
+
+--- google.com ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+rtt min/avg/max/mdev = 8.395/9.822/11.249/1.427 ms
